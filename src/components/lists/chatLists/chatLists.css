@@ -1,0 +1,89 @@
+.chatLists {
+    flex: 1;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    /* Hide scrollbar in Firefox */
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+
+
+        .searchBar {
+            flex: 1;
+            background-color: rgb(125, 37, 83);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            border-radius: 5px;
+            padding: 7px;
+
+            input {
+                background-color: transparent;
+                height: 25px;
+                width: 60%;
+                color: white;
+                border: none;
+                outline: none;
+                font-size: large;
+                flex: 1;
+            }
+
+            img {
+                width: 20px;
+                height: 25px;
+                padding: 1px;
+            }
+        }
+
+        .add {
+            width: 30px;
+            height: 30px;
+            background-color: rgb(59, 59, 144);
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        border-bottom: 1px solid yellow;
+        width: 80%;
+
+        img {
+            height: 30px;
+            width: 30px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .texts {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            cursor: pointer;
+
+            span {
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 300;
+            }
+        }
+
+        .closebutton {
+            background-color: red;
+            padding: 0.2rem;
+            cursor: pointer;
+            color: white;
+        }
+    }
+}
